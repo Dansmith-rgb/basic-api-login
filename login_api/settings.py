@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # My apps
     'myapi',
     'rest_framework',
+    'django_filters',
     # Default apps
     'django.contrib.admin',
     'django.contrib.auth',
