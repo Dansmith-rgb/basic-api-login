@@ -1,8 +1,13 @@
 from rest_framework import serializers
 
-from .models import User
+from .models import Register, Signin
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class RegisterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
+        model = Register
+        fields = ('id', 'name', 'password')
+
+class SigninSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Signin
         fields = ('name', 'password')
