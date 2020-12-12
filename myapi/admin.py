@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import User
+from .models import Register, Signin
 
-admin.site.register(User)
+admin.site.register(Register)
+admin.site.register(Signin)
